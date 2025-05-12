@@ -13,7 +13,7 @@ export class ReproduceIssue extends BaseScriptComponent {
             print("Request successful");
             const data = await response.json();
             const undefinedField = data.undefinedField;
-            undefinedField.doSomething(); // This will throw an error
+            undefinedField.doSomething(); // This should throw an error
             print("never reached");
         }
     }
